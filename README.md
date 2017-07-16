@@ -12,6 +12,8 @@ wps是金山wps办公软件的简写
 
 扩展office办公软件的功能，目前示例 扩展excel的Ribbon界面
 
+![https://github.com/zhaoqingqing/OfficeAddin/blob/master/Docs/wps_ribbon.png](https://github.com/zhaoqingqing/OfficeAddin/blob/master/Docs/wps_ribbon.png)
+
 ### 运行和测试环境
 
 我的运行和测试环境：

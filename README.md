@@ -30,7 +30,7 @@ wps是金山wps办公软件的简写
 2. 双击 **将ExcelAddin添加到注册表.reg**  同时为ms office和wps添加注册项
 3. 如果是wps，在菜单栏选择 **开发工具** - **COM加载项** - 添加 **ExcelAddIn.dll** 为加载项 - 点击 **确定**，在菜单栏的ribbon即可看到
 
-如果你不想使用vs编译代码，可以使用我编译好的dll，编译环境为.net 4.0
+如果你不想使用vs编译代码，可以使用我编译好的dll(编译环境为.net 4.0) [ExcelAddin.dll](https://github.com/zhaoqingqing/OfficeAddin/blob/master/ExcelAddIn/release_bin/ExcelAddIn.dll)
 
 
 

@@ -8,8 +8,8 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Windows.Forms;
 using Office = Microsoft.Office.Core;
-using  Microsoft.Office.Tools;
-using  Microsoft.Office.Interop;
+using Excel = Microsoft.Office.Interop.Excel;
+using Application = Microsoft.Office.Interop.Excel.Application;
 
 // TODO:   按照以下步骤启用功能区(XML)项: 
 
@@ -33,12 +33,18 @@ using  Microsoft.Office.Interop;
 namespace ExcelAddIn
 {
     [ComVisible(true)]
-    public class QuickRibbon : Office.IRibbonExtensibility 
+    public class QuickRibbon : Office.IRibbonExtensibility
     {
         private Office.IRibbonUI ribbon;
+        //当前激活的工作表，不缓存
+        public Excel.Workbook workBook
+        {
+            get { return Globals.ThisAddIn.Application.ActiveWorkbook; }
+        }
 
         public QuickRibbon()
         {
+
         }
 
         #region IRibbonExtensibility 成员
@@ -85,10 +91,24 @@ namespace ExcelAddIn
             MessageBox.Show("TODO Compile This Excel");
         }
 
-        public void ClickFileName(Office.IRibbonControl ctrl)
+        public void ShowWorkBookInfo(Office.IRibbonControl ctrl)
         {
-            MessageBox.Show("TODO 获取当前文件名");
+            var msg = "当前文件名 null";
+            if (workBook != null)
+            {
+                msg = string.Format("当前文件名:{0}\r\n完整路径：{1}", workBook.Name, workBook.FullNameURLEncoded);
+            }
+            MessageBox.Show(msg);
         }
+
+        public void ClickSave(Office.IRibbonControl ctrl)
+        {
+            if (workBook != null)
+            {
+                workBook.Save();
+            }
+        }
+
         #endregion
 
         #region 帮助器

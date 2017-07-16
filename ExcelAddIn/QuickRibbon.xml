@@ -4,9 +4,11 @@
     <tabs>
       <tab idMso="TabAddIns" label="快捷工具栏" visible="true" insertAfterMso="TabHome">
         <group id="MyGroup" label="My Group" visible="true">
-          <button id ="btnFileName" label="当前Excel文件名" onAction="ClickFileName"  getImage="GetButtonImage" size="large"/>
+          <!--size="large" 显示大图标-->
+          <button id ="btnFileName" label="获取Excel信息" onAction="ShowWorkBookInfo"  getImage="GetButtonImage" size="large"/>
           <button id ="btnCommit" label="SVN提交修改" onAction="ClickCommit"  getImage="GetButtonImage" size="large"/>
           <button id ="btnCompile" label="编译当前Excel" onAction="ClickCompile" getImage="GetButtonImage" size="large"/>
+          <button id ="btnSave" label="保存当前Excel" onAction="ClickSave" getImage="GetButtonImage" size="large"/>
         </group>
       </tab>
     </tabs>

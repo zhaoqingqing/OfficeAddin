@@ -1,0 +1,8 @@
+Windows Registry Editor Version 5.00
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Office\Excel\Addins\ExcelAddIn.QuickRibbon]
+"FriendlyName"="ExcelAddIn"
+"Description"="Excel¿ì½Ý¹¤¾ß´°"
+"LoadBehavior"=dword:00000003
+"CommandLineSafe"=dword:00000001
+[HKEY_CURRENT_USER\Software\Kingsoft\Office\ET\AddinsWL]
+"ExcelAddIn.QuickRibbon"=""

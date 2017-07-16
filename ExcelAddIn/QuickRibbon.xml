@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<customUI xmlns="http://schemas.microsoft.com/office/2009/07/customui" onLoad="Ribbon_Load">
+  <ribbon startFromScratch="false">
+    <tabs>
+      <tab idMso="TabAddIns" label="快捷工具栏" visible="true" insertAfterMso="TabHome">
+        <group id="MyGroup" label="My Group" visible="true">
+          <button id ="btnFileName" label="当前Excel文件名" onAction="ClickFileName"  getImage="GetButtonImage" size="large"/>
+          <button id ="btnCommit" label="SVN提交修改" onAction="ClickCommit"  getImage="GetButtonImage" size="large"/>
+          <button id ="btnCompile" label="编译当前Excel" onAction="ClickCompile" getImage="GetButtonImage" size="large"/>
+        </group>
+      </tab>
+    </tabs>
+  </ribbon>
+</customUI>
+

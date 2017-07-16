@@ -1,5 +1,3 @@
-
-
 ## OfficeAddin
 
 本文可能会用到以下简写
@@ -30,13 +28,23 @@ wps是金山wps办公软件的简写
 2. 双击 **将ExcelAddin添加到注册表.reg**  同时为ms office和wps添加注册项
 3. 如果是wps，在菜单栏选择 **开发工具** - **COM加载项** - 添加 **ExcelAddIn.dll** 为加载项 - 点击 **确定**，在菜单栏的ribbon即可看到
 
+如果你不想使用vs编译代码，可以使用我编译好的dll，编译环境为.net 4.0
+
+
+
 ## Microsoft Office API
 
 经测试wps可以通过COM加载：使用ms office  api 类库编写的接口，所以理论上同一套代码可同时运行于微软的Office办公软件和金山WPS之上。
 
 ### Ribbon(界面)
 
+
+
 ### COM
+
+TODO 知识补充
+
+
 
 ## 源代码二次开发？
 
@@ -59,4 +67,6 @@ wps是金山wps办公软件的简写
 
 ## TODO
 
-- 获取当前Excel的文件名
+- [x] 获取当前Excel的文件名 
+- [x] 保存当前编辑的Excel
+

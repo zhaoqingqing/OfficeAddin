@@ -22,7 +22,7 @@ wps是金山wps办公软件的简写
 
 办公软件：WPS 10个人版、Office365
 
-其它条件：需要安装.NET Framwork 4.0 ，Win7 自带.Net3.5 如安装过Windows更新会更新到.Net4.0 ， WIN8/10用户自带此运行环境。
+其它条件：需要安装.NET Framwork 4.0 ，Win7(自带.Net3.5) 如更新过Windows补丁则会更新到.Net4.0 ， WIN8/10用户无需额外安装。
 
 ### 使用说明
 
@@ -33,6 +33,13 @@ wps是金山wps办公软件的简写
 如果你不想使用vs编译代码，可以使用我编译好的dll(编译环境为.net 4.0) [ExcelAddin.dll](https://github.com/zhaoqingqing/OfficeAddin/blob/master/ExcelAddIn/release_bin/ExcelAddIn.dll)
 
 
+### 卸载已安装的加载项
+
+理论上在 **开发工具** - **COM加载项** 删除不需要的加载项。
+
+如果遇到问题，wps请在安装目录下找到ksomisc.exe，双击进行修复。
+
+office请通过更改进行修复。
 
 ## Microsoft Office API
 
